@@ -12,13 +12,25 @@ def draw1(num):
         tt.forward(50)
         tt.right(180-theta)
 
-if __name__ == '__main__':
-    shape_num = 5
-    tt.screensize(1200,600)
-    for i in range(shape_num):
-        # draw(i+3)
-        draw1(i+3)
+def plot(shape_num):
+    tt.screensize(1200, 600)
+    tt.penup()
+    tt.goto(-400,150)
+    tt.pendown()
+    for i in shape_num:
+        draw(i)
         tt.penup()
-        tt.forward(150)
+        tt.forward(200)
+        tt.pendown()
+    tt.penup()
+    tt.goto(-400,-150)
+    tt.pendown()
+    for i in shape_num:
+        draw1(i)
+        tt.penup()
+        tt.forward(200)
         tt.pendown()
     tt.exitonclick()
+
+if __name__ == '__main__':
+    plot([3,5,7,9,11])
