@@ -13,11 +13,11 @@ def draw1(num):
         tt.right(180-theta)
 
 if __name__ == '__main__':
-    shape_num = 1
-    tt.screensize(600,600)
+    shape_num = 5
+    tt.screensize(1200,600)
     for i in range(shape_num):
-        # draw(5)
-        draw1(5)
+        # draw(i+3)
+        draw1(i+3)
         tt.penup()
         tt.forward(150)
         tt.pendown()
