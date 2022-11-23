@@ -33,4 +33,4 @@ def plot(shape_num):
     tt.exitonclick()
 
 if __name__ == '__main__':
-    plot([3,5,7,9,11])
+    plot([3,5,7,9])
